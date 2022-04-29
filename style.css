@@ -1,0 +1,173 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+
+  font-family: 'Poppins', sans-serif;
+}
+html{
+  font-size: 62.5%;
+  height: 100vh;
+  width: 100vw;
+ 
+  background: linear-gradient(90deg, rgba(8,31,130,1) 0%, 
+                                     rgba(0,255,240,1) 53%,
+                                     rgba(8,28,111,1) 100%);
+
+
+}
+
+body {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.wrapper {
+  background-color: #eee;
+  padding-right: 50px;
+  height: 250px;
+  width: 600px;
+  border-radius: 10px;
+  box-shadow: 0 .8rem 2.5rem rgba(0, 0, 0, .8);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.wrapper.active {
+  height: 300px;
+  display: flex;
+  flex-wrap: wrap;
+ 
+}
+.wrapper.active .header .h1{
+display: flex;
+padding-top: -300px;
+height: 20px;
+}
+
+.wrapper.active .header  {
+  font-size: 2.5rem;
+  margin-bottom: -20px;
+  padding: 20px;
+  width: 300px;
+  align-self: baseline;
+  float: left;
+}
+
+.wrapper.active .qr-code{
+margin-left: -300px;
+display: flex;
+
+} 
+
+.wrapper.active .header-form {
+flex-direction: row;
+justify-content: left;
+text-align: left;
+display: inline-block;
+white-space: unset;
+}
+
+.wrapper.active .form button{
+  width: 49%;
+  margin-right: 4px;
+  margin-left: -204px;
+}
+.wrapper.active .form input {
+  width: 49%;
+  margin-left: -149px;
+  padding-top: -50px;
+}
+
+.header-form {
+  padding-left: 50px;
+
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items:center; 
+  flex-direction: column;
+}
+
+.wrapper .header h1 {
+  font-size: 3rem;
+  text-align: center;
+}
+
+.wrapper .header p {
+  font-size: 1.6rem;
+  margin-bottom: 5px;
+  text-align: center;
+}
+
+.wrapper .form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.wrapper .form input {
+  background-color: transparent;
+  width: 100%;
+  margin-left: 110px;
+  margin-right: 60px;
+  outline: none;
+  height: 40px;
+  margin-bottom: 2rem;
+  border: none;
+  border-bottom: .1rem solid blue;
+}
+
+.wrapper .form input::placeholder{
+  padding-left:  .5rem;
+  color: black;
+}
+
+.wrapper .form button{
+  width: 100%;
+  margin-left: 50px;
+  height: 40px;
+  background-color: blue;
+  outline: none;
+  border: none;
+  border-radius: 5px;
+  color: azure;
+  cursor: pointer;
+}
+
+.wrapper .form button:hover{
+  border: .1rem solid blue;
+  color: blue;
+  background-color: transparent;
+  font-weight: bolder;
+}
+
+
+.wrapper .qr-code{
+  display: none;
+  padding: 10px;
+  margin-top: 20px;
+  margin-right: 10px;
+  margin-left: 20px;
+  border-radius: 5px;
+  pointer-events: none;
+  border: 1px solid #ccc;
+}
+
+.wrapper .qr-code img {
+  width: 170px;
+}
+
+.wrapper.active .qr-code{
+
+  transition: all .5s .5s ease;
+}
+
+
